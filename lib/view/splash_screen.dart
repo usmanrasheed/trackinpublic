@@ -45,7 +45,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   'by_usman_rasheed'.tr,
                   style: TextStyle(
                       color: AppColor.blackColor,
-                      fontSize: Get.height * 0.035,
+                      fontSize: Get.height * 0.025,
                       fontWeight: FontWeight.bold
                   ),
                 ),
