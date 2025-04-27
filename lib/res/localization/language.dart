@@ -19,15 +19,24 @@ class Languages extends Translations{
       "password can't be empty":"Password can't be empty",
       "password should be at least 6 character":"Password should be at least 6 character",
       "welcome":"welcome",
+      'choose_language': 'CHOOSE YOUR LANGUAGE',
+      "english":"ENGLISH",
+      "urdu" : "URDU",
+      "punjabi" : "PUNJABI",
+      "balochi" : "BALOCHI",
+      "pashto" : "PASHTO",
+      "kashmiri" : "KASHMIRI",
 
     },
-    'ur_PK':{
+    'ur_PK': {
       'by_usman_rasheed' : 'By Usman Rasheed',
-      'menu':'فہرستِ',
-      'profile':'پروفائل',
-      'settings':'ترتیبات',
-      'Email':'Email',
-      'email hint' : 'ای میل درج کریں۔'
-    }
+      'choose_language': 'اپنی زبان منتخب کریں',
+      'urdu': 'اردو',
+      'english': 'انگریزی',
+      'balochi': 'بلوچی',
+      'pashto': 'پشتو',
+      'punjabi': 'پنجابی',
+      'kashmiri': 'کشمیری',
+    },
   };
 }

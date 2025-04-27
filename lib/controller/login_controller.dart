@@ -4,7 +4,7 @@ import '../res/route/routes_names.dart';
 import '../res/utils/utils.dart';
 
 class LoginController extends GetxController{
-  //final auth = FirebaseAuth.instance;
+  
   final emailController = TextEditingController().obs;
   final passwordController = TextEditingController().obs;
 
@@ -45,29 +45,6 @@ class LoginController extends GetxController{
     Utils.toastMessage("welcome".tr);
     Get.offNamed(RouteName.profileScreen);
   }
-/*  void login(){
-    auth.signInWithEmailAndPassword(email: emailController.value.text.toString(), password: passwordController.value.text.toString()).then((value){
-      Utils.toastMessage("welcome ${value.user!.email}");
-      Get.offNamed(RouteName.profileScreen);
-
-    }).onError<FirebaseAuthException>((error, stackTrace){
-      String errorMessage;
-
-      if (error.code == 'wrong-password') {
-        errorMessage = "Incorrect password.";
-      } else if (error.code == 'user-not-found') {
-        errorMessage = "User not found.";
-      } else if (error.code == 'invalid-email') {
-        errorMessage = "Invalid email address.";
-      } else {
-        errorMessage = "Authentication error Email or Password not Found: ${error.message}";
-      }
-
-      Utils.toastMessage(errorMessage);
-      passwordError.value = errorMessage;
-      print(errorMessage);
-    });
-  }*/
 
   @override
   void onClose() {

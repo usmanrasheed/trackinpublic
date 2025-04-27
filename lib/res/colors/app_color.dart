@@ -12,7 +12,7 @@ class AppColor{
   static const Color mediumGreenColor = Color(0xff32B768);
   static const Color darkGreenColor = Color(0xff005C3D);
 
-
+  static const Color mainColorLight = Color(0xfff2a200);
   static const Color mainColor = Color(0xffcc7a00);
   static const Color secondaryColor = Color(0xffA30B00);
   static const Color accentColor = Color(0xffF9F4EB);

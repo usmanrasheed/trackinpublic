@@ -1,6 +1,7 @@
  import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:trackin/services/localization_service.dart';
 
 import 'res/colors/app_color.dart';
 import 'res/localization/language.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'trackIn',
       translations: Languages(),
-      locale: Locale('en','US'),
+      locale: LocalizationService.currentLocale,//Locale('en','US'),
       fallbackLocale: Locale('en','US'),
       theme: ThemeData(
         useMaterial3: true, // Enable Material 3
@@ -53,10 +54,6 @@ class MyApp extends StatelessWidget {
           bodyLarge: TextStyle(color: AppColor.mainColor), // Default input text color
         ),
       ),
-      /*ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),*/
       getPages:RouteClass.appRoute(),
     );
   }
